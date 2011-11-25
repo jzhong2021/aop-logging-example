@@ -11,3 +11,8 @@ You should see something like the following in your console each time you refres
 
     aop-logging-example: 13:02:14.591 [http-8080-1] DEBUG com.nexse.swat.example.service.DefaultOrderService - order(): [Customer{fullName='Arthur Dent', address='The Galaxy'}, Product{id=42, name='Hitchhicker's Guide to the Galaxy'}]
     aop-logging-example: 13:02:14.592 [http-8080-1] DEBUG com.nexse.swat.example.service.DefaultOrderService - order(): result=Order{status=PROCESSED, timestamp=Fri Nov 25 13:02:14 CET 2011, customer=Customer{fullName='Arthur Dent', address='The Galaxy'}, product=Product{id=42, name='Hitchhicker's Guide to the Galaxy'}}
+
+Nexse SWAT Team
+[http://swat.nexse.com/](http://swat.nexse.com/)
+[@NexseSwatTeam](http://twitter.com/NexseSwatTeam)
+
