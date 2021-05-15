@@ -34,3 +34,15 @@ $ grep -r NOTE .
 ./src/main/java/com/mirkocaserta/example/domain/Debug.java:public @interface Debug { // NOTE: annotate methods with this to enable logging at debug level
 ./src/main/java/com/mirkocaserta/example/logging/aop/LoggingAspect.java:public class LoggingAspect { // NOTE: customize this class maybe?
 ```
+
+## Warning
+
+Someone once said
+
+> With great power comes great responsibility
+
+Please be careful when using this aspect. You can easily shoot yourself in the foot with it.
+
+Make sure the methods you are intercepting take parameters that cleanly implement `toString()` methods.
+
+Imagine intercepting a controller method that takes a `HttpServletRequest`. Yeah, that happened to me once in production and my tech lead was not amused, I can assure you.
