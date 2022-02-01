@@ -7,5 +7,5 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Debug { // NOTE: annotate methods with this to enable logging at debug level
+public @interface DebugXXX { // NOTE: annotate methods with this to enable logging at debug level
 }

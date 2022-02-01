@@ -1,7 +1,7 @@
 package com.mirkocaserta.example.service;
 
 import com.mirkocaserta.example.domain.Customer;
-import com.mirkocaserta.example.domain.Debug;
+import com.mirkocaserta.example.domain.DebugXXX;
 import com.mirkocaserta.example.domain.Order;
 import com.mirkocaserta.example.domain.Product;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class DefaultOrderService implements OrderService {
 
     @Override
-    @Debug // NOTE: annotate methods you want to enable logging for
+    @DebugXXX // NOTE: annotate methods you want to enable logging for
     public Order orderJZ(Customer customer, Product product) {
         System.out.println("Enter orderJZ ...");
         return new Order(Order.Status.PROCESSED, customer, product);
