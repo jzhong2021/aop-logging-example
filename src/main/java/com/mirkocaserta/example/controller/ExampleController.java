@@ -26,7 +26,7 @@ public class ExampleController {
         Customer customer = new Customer("Arthur Dent", "The Galaxy");
         Product product = new Product(42L, "Hitchhiker's Guide to the Galaxy");
 
-        Order order = orderService.order(customer, product);
+        Order order = orderService.orderJZ(customer, product);
 
         String body = "Thank you, your order has been received. Here it is:\n\n" + order + "\n";
 

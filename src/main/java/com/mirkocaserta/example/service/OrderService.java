@@ -6,6 +6,6 @@ import com.mirkocaserta.example.domain.Product;
 
 public interface OrderService {
 
-    Order order(Customer customer, Product product);
+    Order orderJZ(Customer customer, Product product);
 
 }
