@@ -3,7 +3,8 @@
     <contextName>aop-logging-example</contextName>
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%contextName: %d{HH:mm:ss.SSS} [%thread] %level %logger - %msg%n</pattern>
+            <!-- pattern>%contextName: %d{HH:mm:ss.SSS} [%thread] %level %logger - %msg%n</pattern -->
+            <pattern>{"contextName":"%contextName", "timestamp":"%d{HH:mm:ss.SSS}", "thread":"[%thread]", "level":"%level", "logger":"%logger", "msg":"%msg"}%n</pattern>
         </encoder>
     </appender>
     <root level="DEBUG">
