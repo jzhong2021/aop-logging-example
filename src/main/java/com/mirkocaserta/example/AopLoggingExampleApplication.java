@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication
-@EnableAspectJAutoProxy // NOTE: this is needed for @Aspect to work
+//@EnableAspectJAutoProxy // NOTE: this is needed for @Aspect to work //JZ: comment out also works
 public class AopLoggingExampleApplication {
 
 	public static void main(String[] args) {

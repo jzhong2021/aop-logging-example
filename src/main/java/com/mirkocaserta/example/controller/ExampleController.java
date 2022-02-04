@@ -21,6 +21,12 @@ public class ExampleController {
         this.orderService = orderService;
     }
 
+	@RequestMapping("/home2")   //adde by JZ, work with Interceptor.java
+	public String home2() {
+        System.out.println("this is home2!");
+		return "Hello home2";
+	}
+
     @RequestMapping("/")
     public ResponseEntity<String> service() {
         Customer customer = new Customer("Arthur Dent", "The Galaxy");
